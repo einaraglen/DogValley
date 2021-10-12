@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float moveSpeed;
-    public LayerMask solidObjectsLayer;
+    public LayerMask solidObjectsLayer                                                                                                                                                                                                                                                            ;
 
     private bool isMoving;
     private Vector2 input;
@@ -63,4 +63,8 @@ public class PlayerController : MonoBehaviour {
         if (Physics2D.OverlapCircle(targetPosition, 0.2f, solidObjectsLayer) != null) return false;
         return true;
     }
+
+    /*private void CheckForEncounters() {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, ))
+    }*/
 }
