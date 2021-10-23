@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RoomChanger
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Non-solid foreground
   - SolidObjects
   - 
   - 
@@ -44,8 +45,14 @@ TagManager:
   - name: Background
     uniqueID: 1255637173
     locked: 0
+  - name: Non-solid foreground
+    uniqueID: 3262953125
+    locked: 0
   - name: Foreground
     uniqueID: 2391404885
+    locked: 0
+  - name: SolidCover
+    uniqueID: 692889503
     locked: 0
   - name: Player
     uniqueID: 2491933427

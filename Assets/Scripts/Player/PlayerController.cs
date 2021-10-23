@@ -6,9 +6,11 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
     public LayerMask solidObjectsLayer                                                                                                                                                                                                                                                            ;
 
+    private bool noCollide = true;
     private bool isMoving;
     private Vector2 input;
     private Animator animator;
+    public IEnumerator move;
 
     private void Awake() {
         animator = GetComponent<Animator>();
@@ -33,7 +35,8 @@ public class PlayerController : MonoBehaviour {
                 //cancel walking if targetPosition is in an unWalkable position
                 if (!isWalkable(targetPosition)) return;
                 //start movment towards given target on new thread
-                StartCoroutine(Move(targetPosition));
+                move = Move(targetPosition);
+                StartCoroutine(move);
             }
         }
         //trigger movement animation
@@ -45,23 +48,51 @@ public class PlayerController : MonoBehaviour {
         isMoving = true;
 
         //animate player between tiles
-        while ((targetPosition - transform.position).sqrMagnitude > Mathf.Epsilon) {
+        while (((targetPosition - transform.position).sqrMagnitude > Mathf.Epsilon) && noCollide) {
             //move player based on moveSpeed
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             //yield return, stops current execution of code, but sets "checkpoint" so next execution will resume where it last yield'ed
             yield return null;
         }
 
-        //if less than Epsilon is left of distance, move player to new tile
-        transform.position = targetPosition;
-
+        Debug.Log("Ending movement");
         //end movment
         isMoving = false;
+        move = null;
     }
 
     private bool isWalkable(Vector3 targetPosition) {
         if (Physics2D.OverlapCircle(targetPosition, 0.2f, solidObjectsLayer) != null) return false;
+        if (!noCollide)
+        {
+            noCollide = true;
+            return false;
+        }
         return true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (move != null)
+        {
+            StopCoroutine(move);
+            isMoving = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        if (collision.gameObject.CompareTag("RoomChanger")) {
+            RoomChanger roomChanger = collision.gameObject.GetComponent<RoomChanger>();
+
+            Vector3 targetPosition = roomChanger.GetDestination();
+
+            transform.position = targetPosition;
+
+            if (move != null) {
+                StopCoroutine(move);
+                isMoving = false;
+            }
+        }
     }
 
     /*private void CheckForEncounters() {
