@@ -70,4 +70,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48fb9b93579cc184288435a68fa4773b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerChange: {x: 0, y: -100, z: 0}
+  destination: {x: 0.5, y: 0.5, z: 0}
