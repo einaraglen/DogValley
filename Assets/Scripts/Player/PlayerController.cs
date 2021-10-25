@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    /*private void CheckForEncounters() {
-        if (Physics2D.OverlapCircle(transform.position, 0.2f, ))
-    }*/
+    private void CheckForEncounters() {
+        //if (Physics2D.OverlapCircle(transform.position, 0.2f, ));
+    }
 }
