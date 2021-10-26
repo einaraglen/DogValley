@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - RoomChanger
+  - DialogueManager
   layers:
   - Default
   - TransparentFX
