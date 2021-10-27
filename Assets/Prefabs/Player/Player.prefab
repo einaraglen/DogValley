@@ -102,6 +102,9 @@ MonoBehaviour:
   solidObjectsLayer:
     serializedVersion: 2
     m_Bits: 256
+  nonSolidLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!95 &5827745404195267597
 Animator:
   serializedVersion: 3

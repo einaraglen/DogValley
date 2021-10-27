@@ -5,18 +5,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     public float moveSpeed;
     public LayerMask solidObjectsLayer;
+    public LayerMask nonSolidLayer;
 
     private bool noCollide = true;
     private bool isMoving;
     private Vector2 input;
-    private Animator animator;
+    public Animator animator;
     public IEnumerator move;
 
     private void Awake() {
         animator = GetComponent<Animator>();
+        //snap to center of nearest tile
+        SetPositionAndSnapToTile(transform.position);
     }
 
-    private void Update() {
+    public void HandleUpdate() {
         if (!isMoving && !DialogueManager.isConversing()) {
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
@@ -40,6 +43,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
         //trigger movement animation
+        if (animator == null) return;
         animator.SetBool("isMoving", isMoving);
     }
 
@@ -59,6 +63,12 @@ public class PlayerController : MonoBehaviour {
         isMoving = false;
         move = null;
 
+        CheckForPortals();
+
+    }
+
+    public void SetPositionAndSnapToTile(Vector2 pos) {
+        transform.position = new Vector3(Mathf.Floor(pos.x) + 0.5f, Mathf.Floor(pos.y) + 0.8f, transform.position.z);
     }
 
     private bool isWalkable(Vector3 targetPosition) {
@@ -77,13 +87,20 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-        var triggable = collision.GetComponent<IPlayerTriggable>();
-        if (triggable != null) {
-            triggable.OnPlayerTriggered(this);
+    private void CheckForPortals() {
+        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, nonSolidLayer);
+
+        foreach (var collider in colliders) {
+            var triggerable = collider.GetComponent<IPlayerTriggable>();
+            if (triggerable != null) {
+                isMoving = false;
+                triggerable.OnPlayerTriggered(this);
+                break;
+            }
         }
+    }
 
-
+    /*private void OnTriggerEnter2D(Collider2D collision) {
         /*if (collision.gameObject.CompareTag("RoomChanger")) {
             RoomChanger roomChanger = collision.gameObject.GetComponent<RoomChanger>();
 
@@ -95,6 +112,7 @@ public class PlayerController : MonoBehaviour {
                 StopCoroutine(move);
                 isMoving = false;
             }
-        }*/
-    }
+        }
+    }*/
+
 }
