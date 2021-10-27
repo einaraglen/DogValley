@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overworld.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 66afd9ef6eda99c47b5319bfd144acbe
+  - enabled: 1
+    path: Assets/Scenes/Houses/StartHouse.unity
+    guid: 3a04a84b6cafc8a40abdb2d8ba682966
   m_configObjects: {}

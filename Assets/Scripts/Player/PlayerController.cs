@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float moveSpeed;
-    public LayerMask solidObjectsLayer                                                                                                                                                                                                                                                            ;
+    public LayerMask solidObjectsLayer;
 
     private bool noCollide = true;
     private bool isMoving;
@@ -55,33 +55,36 @@ public class PlayerController : MonoBehaviour {
             yield return null;
         }
 
-        Debug.Log("Ending movement");
         //end movment
         isMoving = false;
         move = null;
+
     }
 
     private bool isWalkable(Vector3 targetPosition) {
         if (Physics2D.OverlapCircle(targetPosition, 0.2f, solidObjectsLayer) != null) return false;
-        if (!noCollide)
-        {
+        if (!noCollide) {
             noCollide = true;
             return false;
         }
         return true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (move != null)
-        {
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (move != null) {
             StopCoroutine(move);
             isMoving = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision){
-        if (collision.gameObject.CompareTag("RoomChanger")) {
+    private void OnTriggerEnter2D(Collider2D collision) {
+        var triggable = collision.GetComponent<IPlayerTriggable>();
+        if (triggable != null) {
+            triggable.OnPlayerTriggered(this);
+        }
+
+
+        /*if (collision.gameObject.CompareTag("RoomChanger")) {
             RoomChanger roomChanger = collision.gameObject.GetComponent<RoomChanger>();
 
             Vector3 targetPosition = roomChanger.GetDestination();
@@ -92,10 +95,6 @@ public class PlayerController : MonoBehaviour {
                 StopCoroutine(move);
                 isMoving = false;
             }
-        }
-    }
-
-    private void CheckForEncounters() {
-        //if (Physics2D.OverlapCircle(transform.position, 0.2f, ));
+        }*/
     }
 }
