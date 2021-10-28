@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using UnityEngine.Tilemaps;
 
 public class CameraMovement : MonoBehaviour {
 
@@ -8,9 +10,14 @@ public class CameraMovement : MonoBehaviour {
     public float smoothing;
     public Vector2 maxPosition;
     public Vector2 minPosiition;
+    private Tilemap tilemap;
 
     void Start() {
-
+        tilemap = FindObjectsOfType<Tilemap>().First();
+        if (tilemap != null) {
+            Debug.Log(tilemap.cellBounds.xMin);
+            Debug.Log(tilemap.cellBounds.yMin);
+        }
     }
 
     //Always comes last
