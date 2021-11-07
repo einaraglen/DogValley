@@ -7,7 +7,8 @@ public class DialogueManager : MonoBehaviour {
 
     private static DialogueManager manager;
     public TMPro.TextMeshProUGUI dialogueBox;
-    public float textSpeed;
+    public UnityEngine.UI.Image textCanvas;
+    public float textSpeed = 0.15f;
 
     private Queue<string> dialogueSentences;
     private string currentLine;
@@ -34,6 +35,7 @@ public class DialogueManager : MonoBehaviour {
     private void endConversation() {
         dialogueBox.text = string.Empty;
         dialogueBox.gameObject.SetActive(false);
+        textCanvas.gameObject.SetActive(false);
     }
     private void Start() {
         GameObject gameObject = GameObject.FindGameObjectWithTag("DialogueManager");
@@ -50,6 +52,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void startDialogue(Queue<string> sentences) {
         dialogueBox.gameObject.SetActive(true);
+        textCanvas.gameObject.SetActive(true);
         this.dialogueSentences = sentences;
         currentLine = dialogueSentences.Dequeue();
         StartCoroutine(writeLine());
