@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour {
     private bool typing = false;
 
 
-    void Update() {
+    public void HandleUpdate() {
         if (Input.GetMouseButtonDown(0) && !typing && conversing) {
             if (dialogueSentences.Count != 0) {
                 currentLine = dialogueSentences.Dequeue();
@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour {
         dialogueBox.text = string.Empty;
         dialogueBox.gameObject.SetActive(false);
         textCanvas.gameObject.SetActive(false);
+        GameController.Instance.conversing(false);
     }
     private void Start() {
         GameObject gameObject = GameObject.FindGameObjectWithTag("DialogueManager");

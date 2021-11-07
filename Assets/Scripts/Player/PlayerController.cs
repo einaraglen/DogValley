@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void HandleUpdate() {
-        if (!isMoving && !DialogueManager.isConversing()) {
+        if (!isMoving) {
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
 
