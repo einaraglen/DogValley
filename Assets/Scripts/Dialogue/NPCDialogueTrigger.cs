@@ -8,17 +8,12 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
     public string[] sentences;
 
     public void OnPlayerTriggered(PlayerController player) {
-        GameController.Instance.conversing(true);
-        Debug.Log("Dialogue triggered");
+        GameController.Instance.Dialog(true);
         DialogueManager dialogueManager = DialogueManager.getInstance();
-        Debug.Log("Got mono");
         Queue<string> dialogueQueue = new Queue<string>();
-        foreach (string s in sentences)
-        {
+        foreach (string s in sentences) {
             dialogueQueue.Enqueue(s);
         }
-        Debug.Log("Starting dia");
         dialogueManager.startDialogue(dialogueQueue);
-        Debug.Log("Started dia");
     }
 }

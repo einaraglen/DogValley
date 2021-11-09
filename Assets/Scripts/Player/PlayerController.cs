@@ -100,19 +100,4 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision) {
-        /*if (collision.gameObject.CompareTag("RoomChanger")) {
-            RoomChanger roomChanger = collision.gameObject.GetComponent<RoomChanger>();
-
-            Vector3 targetPosition = roomChanger.GetDestination();
-
-            transform.position = targetPosition;
-
-            if (move != null) {
-                StopCoroutine(move);
-                isMoving = false;
-            }
-        }
-    }*/
-
 }

@@ -20,14 +20,15 @@ public class GameController : MonoBehaviour {
     private void Update() {
         if (state == GameState.FreeRoam) {
             playerController.HandleUpdate();
-        } else if (state == GameState.Dialogue) {
+        }
+        
+        if (state == GameState.Dialogue) {
             dialogueManager.HandleUpdate();
         }
-        //TODO: give game state to dialog when in dialog
     }
 
-    public void conversing(bool conversing) {
-        if (conversing) {
+    public void Dialog(bool dialog) {
+        if (dialog) {
             previousState = state;
             state = GameState.Dialogue;
         } else {

@@ -47,6 +47,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
     - {fileID: 2800000, guid: 79d9c3af20141a94ca1def478cd82104, type: 3}
     - {fileID: 2800000, guid: 21c16a6093f66c64887e836b099a9a4b, type: 3}
+    - {fileID: 513192918839877092, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+    totalSpriteSurfaceArea: 443744
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -323,6 +325,7 @@ SpriteAtlas:
   - {fileID: 7581305520753337138, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
   - {fileID: -8638329562825418561, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
   - {fileID: 8054280360478193846, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
+  - {fileID: 513192918839877092, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
   - {fileID: 136123638574666257, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
   - {fileID: 293919518158258091, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
   - {fileID: -2417109873707893127, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
@@ -1748,6 +1751,7 @@ SpriteAtlas:
   - acid_0
   - acid_3
   - acid_2
+  - font_37
   - Overworld_827
   - Overworld_837
   - Overworld_847

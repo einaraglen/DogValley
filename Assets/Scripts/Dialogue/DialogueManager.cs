@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour {
         dialogueBox.text = string.Empty;
         dialogueBox.gameObject.SetActive(false);
         textCanvas.gameObject.SetActive(false);
-        GameController.Instance.conversing(false);
+        GameController.Instance.Dialog(false);
     }
     private void Start() {
         GameObject gameObject = GameObject.FindGameObjectWithTag("DialogueManager");
@@ -59,7 +59,6 @@ public class DialogueManager : MonoBehaviour {
         StartCoroutine(writeLine());
         conversing = true;
     }
-
     private IEnumerator writeLine() {
         typing = true;
         dialogueBox.text = string.Empty;
@@ -68,6 +67,10 @@ public class DialogueManager : MonoBehaviour {
             yield return new WaitForSeconds(textSpeed);
         }
         typing = false;
+    }
+
+    void OnDestroy() {
+        Debug.Log("Destroyed");
     }
 
 }
