@@ -338,6 +338,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1726586338050916307, guid: c52053cd5e4e179499a65c2f03c7fbe1, type: 3}
+      propertyPath: textSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726586338050916307, guid: c52053cd5e4e179499a65c2f03c7fbe1, type: 3}
       propertyPath: textCanvas
       value: 
       objectReference: {fileID: 7530898353042341982}

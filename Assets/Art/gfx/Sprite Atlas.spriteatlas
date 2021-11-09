@@ -48,7 +48,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 79d9c3af20141a94ca1def478cd82104, type: 3}
     - {fileID: 2800000, guid: 21c16a6093f66c64887e836b099a9a4b, type: 3}
     - {fileID: 513192918839877092, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
-    totalSpriteSurfaceArea: 443744
+    - {fileID: 2800000, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+    totalSpriteSurfaceArea: 462688
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -325,7 +326,81 @@ SpriteAtlas:
   - {fileID: 7581305520753337138, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
   - {fileID: -8638329562825418561, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
   - {fileID: 8054280360478193846, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
+  - {fileID: -378831538783125820, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8124180961676750561, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 3460629101215251287, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8743923282464806245, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -5189378041568466396, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -7883779674286137895, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 300436065817215930, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -5569944575198093936, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 3166942077688560813, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 5311506086254759173, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 8719968736322432147, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -562215649905675761, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -4667810276610611246, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 8443789777515663478, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -7906268493179887024, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 6765247537847567884, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
   - {fileID: 513192918839877092, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 5418162436571925455, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 8160982824146847139, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -2559629705165882549, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -5438530089893537495, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 6493954660310491636, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -1511303503433928433, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -7090854080807722005, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 8882853147829297805, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 3845351280847745269, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 2704310431558931596, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -4315553655255764571, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 72588526092518375, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -1154728293029056956, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -3986410753571629045, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 5414380362603900355, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -6066665094409415949, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 5674017421615257816, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -6204537429391860061, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 82551005613627470, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 1469561704231032989, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 2101793971119067923, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 931394714719287329, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 630263889465222927, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 7796009828474674458, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -149372764968093301, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8876187722716660391, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -3734500981392899376, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -7050710978900621531, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 964083406343291134, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 6221208465877577646, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -1916246309086033740, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 7138141027101784252, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -792220410938874319, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -3282539809789695831, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -5386296728994625866, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 5203819691020937983, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8569273844013267952, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -3083788715594787006, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 2031156817976202697, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -1801494326283993156, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -2450729692647493939, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 355810862919209075, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -1461267409508666582, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 6058115013380271172, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8776576318087593080, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -6910291364917096050, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 6110858318548952025, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 2907244961595599160, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -1893216928342777713, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -3152973576257713107, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8757616336046992801, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 7420296101623652062, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -8207123047697770445, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 3862973132846414136, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -6460682450518804140, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: -2005034449781367893, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 5203824713796328956, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+  - {fileID: 1706820595285680914, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
   - {fileID: 136123638574666257, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
   - {fileID: 293919518158258091, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
   - {fileID: -2417109873707893127, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
@@ -1751,7 +1826,81 @@ SpriteAtlas:
   - acid_0
   - acid_3
   - acid_2
+  - font_58
+  - font_59
+  - font_38
+  - font_39
+  - font_50
+  - font_51
+  - font_108
+  - font_52
+  - font_109
+  - font_53
+  - font_54
+  - font_55
+  - font_104
+  - font_56
+  - font_105
+  - font_57
   - font_37
+  - font_106
+  - font_107
+  - font_100
+  - font_101
+  - font_102
+  - font_103
+  - font_111
+  - font_110
+  - font_61
+  - font_60
+  - font_63
+  - font_62
+  - font_65
+  - font_64
+  - font_67
+  - font_66
+  - font_69
+  - font_68
+  - font_49
+  - font_48
+  - font_98
+  - font_99
+  - font_43
+  - font_94
+  - font_42
+  - font_78
+  - font_95
+  - font_89
+  - font_41
+  - font_79
+  - font_96
+  - font_88
+  - font_40
+  - font_76
+  - font_97
+  - font_87
+  - font_47
+  - font_77
+  - font_90
+  - font_86
+  - font_46
+  - font_74
+  - font_91
+  - font_85
+  - font_45
+  - font_75
+  - font_92
+  - font_84
+  - font_44
+  - font_72
+  - font_93
+  - font_83
+  - font_73
+  - font_82
+  - font_70
+  - font_81
+  - font_71
+  - font_80
   - Overworld_827
   - Overworld_837
   - Overworld_847

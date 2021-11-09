@@ -8,6 +8,9 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
     public string[] sentences;
 
     public void OnPlayerTriggered(PlayerController player) {
+        //stop walk animaion
+        player.animator.SetBool("isMoving", false);
+        //continue dialog system
         GameController.Instance.Dialog(true);
         DialogueManager dialogueManager = DialogueManager.getInstance();
         Queue<string> dialogueQueue = new Queue<string>();
