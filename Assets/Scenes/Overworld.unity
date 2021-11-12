@@ -202,9 +202,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfced7fb350e2f04595b5cc6ea404ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentences:
-  - Hi!
-  - You should continue you adventure
+  dialogues:
+  - sentences:
+    - Thank you for finding the log!
+    prerequisiteObjectives: 03000000
+    disabled: 0
+    onlyOnce: 0
+    completeObjective: 0
+  - sentences:
+    - Hey! Can you find the log?
+    prerequisiteObjectives: 04000000
+    disabled: 0
+    onlyOnce: 1
+    completeObjective: 4
 --- !u!212 &22031686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -436,6 +446,99 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &54050493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54050496}
+  - component: {fileID: 54050495}
+  - component: {fileID: 54050494}
+  - component: {fileID: 54050497}
+  m_Layer: 7
+  m_Name: QuestTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &54050494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54050493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31aec1d78096d51469150bf848097fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: 3
+--- !u!61 &54050495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54050493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.23318112, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5926726, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &54050496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54050493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.72, y: 7.084, z: 0}
+  m_LocalScale: {x: 1, y: 1.1125, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &54050497
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54050493}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &128378018
 GameObject:
   m_ObjectHideFlags: 0
@@ -19361,6 +19464,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a4603a6c2d5264682e58f23d878050, type: 3}
+--- !u!1001 &4691701447794507600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4691701447327614305, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_Name
+      value: QuestManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691701447327614307, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1bdb428d7843ec4fb761f896975a3af, type: 3}
 --- !u!1001 &5301816872990904598
 PrefabInstance:
   m_ObjectHideFlags: 0

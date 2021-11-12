@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     // To add objectives, add an entry to the enum
-    public enum Objective {TTFirstMan, FindBone, EnterHouse, None}
+    public enum Objective {TTFirstMan, FindBone, EnterHouse, FindLog, None}
 
     private Dictionary<Objective, bool> progress;
     public static QuestManager Instance { get; private set; }
@@ -13,6 +13,10 @@ public class QuestManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void completeObjective(Objective objective) {
+        progress[objective] = true;
     }
 
     public void Start()
