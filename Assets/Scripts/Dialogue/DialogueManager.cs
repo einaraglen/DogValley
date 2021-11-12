@@ -69,8 +69,4 @@ public class DialogueManager : MonoBehaviour {
         typing = false;
     }
 
-    void OnDestroy() {
-        Debug.Log("Destroyed");
-    }
-
 }

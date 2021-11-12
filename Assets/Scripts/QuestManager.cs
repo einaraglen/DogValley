@@ -21,7 +21,6 @@ public class QuestManager : MonoBehaviour
 
     public void Start()
     {
-        Instance = new QuestManager();
         Instance.setupObjectives();
     }
 

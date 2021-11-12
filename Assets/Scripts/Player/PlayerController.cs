@@ -11,10 +11,13 @@ public class PlayerController : MonoBehaviour {
     private bool isMoving;
     private Vector2 input;
     public Animator animator;
+    private AudioSource footsteps;
     public IEnumerator move;
 
     private void Awake() {
         animator = GetComponent<Animator>();
+        footsteps = GetComponent<AudioSource>();
+
         //snap to center of nearest tile
         SetPositionAndSnapToTile(transform.position);
     }
@@ -50,6 +53,7 @@ public class PlayerController : MonoBehaviour {
     IEnumerator Move(Vector3 targetPosition) {
         //init movment
         isMoving = true;
+        footsteps.mute = false;
 
         //animate player between tiles
         while (((targetPosition - transform.position).sqrMagnitude > Mathf.Epsilon) && noCollide) {
@@ -62,6 +66,7 @@ public class PlayerController : MonoBehaviour {
         //end movment
         isMoving = false;
         move = null;
+        footsteps.mute = true;
 
         CheckForPortals();
 
