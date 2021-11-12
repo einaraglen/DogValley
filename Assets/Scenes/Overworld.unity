@@ -208,13 +208,13 @@ MonoBehaviour:
     prerequisiteObjectives: 03000000
     disabled: 0
     onlyOnce: 0
-    completeObjective: 0
+    completeObjective: 4
   - sentences:
     - Hey! Can you find the log?
     prerequisiteObjectives: 04000000
     disabled: 0
     onlyOnce: 1
-    completeObjective: 4
+    completeObjective: 0
 --- !u!212 &22031686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -478,6 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: 3
+  prerequisiteObjectives: 00000000
 --- !u!61 &54050495
 BoxCollider2D:
   m_ObjectHideFlags: 0
