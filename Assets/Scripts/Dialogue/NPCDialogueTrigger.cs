@@ -35,10 +35,8 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
             foreach (QuestManager.Objective obj in current.prerequisiteObjectives)
             {
                 bool hit = false;
-                Debug.Log(obj.ToString());
                 foreach (QuestManager.Objective objective in QuestManager.Objective.GetValues(typeof(QuestManager.Objective)))
                 {
-                    Debug.Log(objective.ToString());
                     if (QuestManager.Instance.isComleted(obj)) hit = true;
                 }
                 if (!hit) ready = false;
@@ -52,7 +50,6 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
         Dialogue dialogue = dialogues[i - 1];
         if (dialogue.onlyOnce) dialogue.disabled = true;
 
-        Debug.Log("Objectives fulfilled");
         //stop walk animaion
         player.animator.SetBool("isMoving", false);
         //continue dialog system

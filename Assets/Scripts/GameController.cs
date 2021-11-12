@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
     GameState previousState;
     public PlayerController playerController;
     public DialogueManager dialogueManager;
+    public Canvas canvas;
 
     public static GameController Instance { get; private set; }
 
@@ -18,6 +19,10 @@ public class GameController : MonoBehaviour {
     }
 
     private void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            PauseGame(state != GameState.Paused);
+        }
+
         if (state == GameState.FreeRoam) {
             playerController.HandleUpdate();
         }
@@ -40,9 +45,20 @@ public class GameController : MonoBehaviour {
         if (pause) {
             previousState = state;
             state = GameState.Paused;
+            showPauseMenu();
         }
         else {
             state = previousState;
+            hidePauseMenu();
         }
     }
+
+    private void showPauseMenu() {
+        canvas.transform.Find("PauseMenu").gameObject.SetActive(true);
+    }
+
+    private void hidePauseMenu() {
+        canvas.transform.Find("PauseMenu").gameObject.SetActive(false);
+    }
+
 }
