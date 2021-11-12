@@ -23,7 +23,7 @@ public class Portal : MonoBehaviour, IPlayerTriggable {
     IEnumerator SwitchScene() {
         DontDestroyOnLoad(gameObject);
 
-        GameController.Instance.PauseGame(true);
+        GameController.Instance.LockGame(true);
 
         yield return SceneManager.LoadSceneAsync(toSceneIndex);
 
@@ -31,7 +31,7 @@ public class Portal : MonoBehaviour, IPlayerTriggable {
         var destinationPortal = GameObject.FindObjectsOfType<Portal>().First(x => x != this && x.portal == this.portal);
         player.SetPositionAndSnapToTile(destinationPortal.spawnPoint.position);
 
-        GameController.Instance.PauseGame(false);
+        GameController.Instance.LockGame(false);
 
         Destroy(gameObject);
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Paused, Dialogue }
+public enum GameState { FreeRoam, Paused, Dialogue, Locked }
 
 public class GameController : MonoBehaviour {
 
@@ -50,6 +50,16 @@ public class GameController : MonoBehaviour {
         else {
             state = previousState;
             hidePauseMenu();
+        }
+    }
+
+    public void LockGame(bool locked) {
+        if (locked) {
+            previousState = state;
+            state = GameState.Locked;
+        }
+        else {
+            state = previousState;
         }
     }
 
