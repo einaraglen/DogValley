@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RoomChanger
   - DialogueManager
+  - TalkingBox
   layers:
   - Default
   - TransparentFX
