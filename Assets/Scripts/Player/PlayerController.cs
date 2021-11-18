@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     public float moveSpeed;
@@ -12,17 +13,20 @@ public class PlayerController : MonoBehaviour {
     private Vector2 input;
     public Animator animator;
     private AudioSource footsteps;
+    private AudioReverbFilter reverb;
     public IEnumerator move;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         footsteps = GetComponent<AudioSource>();
+        reverb = GetComponent<AudioReverbFilter>();
 
         //snap to center of nearest tile
         SetPositionAndSnapToTile(transform.position);
     }
 
     public void HandleUpdate() {
+        //handleFootStepReverd();
         if (!isMoving) {
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
@@ -50,6 +54,10 @@ public class PlayerController : MonoBehaviour {
         animator.SetBool("isMoving", isMoving);
     }
 
+    void OnLevelWasLoaded() {
+        handleFootStepReverd();
+    }
+
     IEnumerator Move(Vector3 targetPosition) {
         //init movment
         isMoving = true;
@@ -70,6 +78,11 @@ public class PlayerController : MonoBehaviour {
 
         CheckForPortals();
 
+    }
+
+    public void handleFootStepReverd() {
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        reverb.enabled = sceneIndex == 5;
     }
 
     public void SetPositionAndSnapToTile(Vector2 pos) {
