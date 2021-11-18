@@ -6,6 +6,7 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
 {
 
     public Dialogue[] dialogues;
+    public GameObject talkingbox;
 
     [System.Serializable]
     public class Dialogue {
@@ -65,6 +66,14 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
             QuestManager.Instance.completeObjective(dialogue.completeObjective);
         }
 
-        dialogueManager.startDialogue(dialogueQueue);
+        if (this.talkingbox != null)
+        {
+            Debug.Log("ActivatingTalking");
+            dialogueManager.startDialogue(dialogueQueue, talkingbox);
+        } else
+        {
+            Debug.Log("NoTalkingBox");
+            dialogueManager.startDialogue(dialogueQueue);
+        }
     }
 }
