@@ -40,16 +40,15 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
-      enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
-    - {fileID: 2800000, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
     - {fileID: 2800000, guid: 79d9c3af20141a94ca1def478cd82104, type: 3}
     - {fileID: 2800000, guid: 21c16a6093f66c64887e836b099a9a4b, type: 3}
     - {fileID: 513192918839877092, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
     - {fileID: 2800000, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
+    totalSpriteSurfaceArea: 460640
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -318,14 +317,6 @@ SpriteAtlas:
   - {fileID: 536419509007563539, guid: 21c16a6093f66c64887e836b099a9a4b, type: 3}
   - {fileID: 1036803682579554421, guid: 21c16a6093f66c64887e836b099a9a4b, type: 3}
   - {fileID: 5559694988392259305, guid: 21c16a6093f66c64887e836b099a9a4b, type: 3}
-  - {fileID: 1677276544941849684, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: -2614533222644868274, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: -171478962641283667, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: -1497555960800156651, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: -6737730626325751522, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: 7581305520753337138, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: -8638329562825418561, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
-  - {fileID: 8054280360478193846, guid: 0504b306ed58b914084d86b20b5ee164, type: 3}
   - {fileID: -378831538783125820, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
   - {fileID: -8124180961676750561, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
   - {fileID: 3460629101215251287, guid: e7b52b0a6d74efc4a82b76865112218d, type: 3}
@@ -1818,14 +1809,6 @@ SpriteAtlas:
   - Inner_38
   - Inner_42
   - Inner_43
-  - acid_5
-  - acid_4
-  - acid_7
-  - acid_6
-  - acid_1
-  - acid_0
-  - acid_3
-  - acid_2
   - font_58
   - font_59
   - font_38
