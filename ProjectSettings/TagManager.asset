@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - 
-  - Non-solid foreground
+  - 
   - SolidObjects
   - 
   - 
@@ -40,24 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 1255637173
     locked: 0
-  - name: Non-solid foreground
-    uniqueID: 3262953125
-    locked: 0
-  - name: Foreground
-    uniqueID: 2391404885
-    locked: 0
-  - name: SolidCover
-    uniqueID: 692889503
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Player
     uniqueID: 2491933427
     locked: 0
-  - name: PlayerForeground
-    uniqueID: 2521584333
+  - name: Foreground
+    uniqueID: 2391404885
     locked: 0
