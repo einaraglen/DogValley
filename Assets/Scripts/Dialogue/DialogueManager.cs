@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour {
     private string currentLine;
     private static bool conversing = false;
     private bool typing = false;
+    private List<GameObject> activated = new List<GameObject>();
 
 
     public void HandleUpdate() {
@@ -36,6 +37,11 @@ public class DialogueManager : MonoBehaviour {
         dialogueBox.text = string.Empty;
         dialogueBox.gameObject.SetActive(false);
         textCanvas.gameObject.SetActive(false);
+        foreach (GameObject active in this.activated)
+        {
+            active.SetActive(false);
+        }
+        activated.Clear();
         GameController.Instance.Dialog(false);
     }
     private void Start() {
@@ -59,6 +65,14 @@ public class DialogueManager : MonoBehaviour {
         StartCoroutine(writeLine());
         conversing = true;
     }
+
+    public void startDialogue(Queue<string> sentences, GameObject toActivate)
+    {
+        toActivate.SetActive(true);
+        this.activated.Add(toActivate);
+        this.startDialogue(sentences);
+    }
+
     private IEnumerator writeLine() {
         typing = true;
         dialogueBox.text = string.Empty;
