@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 0504b306ed58b914084d86b20b5ee164
+guid: 3926c784aa2f6e7448b90d6d55606cdd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7581305520753337138
-    second: acid_0
+      213: -2597431958190902631
+    second: polluted_water_edges_2_0
   - first:
-      213: -6737730626325751522
-    second: acid_1
+      213: 7903066109235016499
+    second: polluted_water_edges_2_1
   - first:
-      213: 8054280360478193846
-    second: acid_2
+      213: 6115838367503383083
+    second: polluted_water_edges_2_2
   - first:
-      213: -8638329562825418561
-    second: acid_3
-  - first:
-      213: -2614533222644868274
-    second: acid_4
-  - first:
-      213: 1677276544941849684
-    second: acid_5
-  - first:
-      213: -1497555960800156651
-    second: acid_6
-  - first:
-      213: -171478962641283667
-    second: acid_7
+      213: 7395444882066455520
+    second: polluted_water_edges_2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -48,7 +36,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -128,11 +115,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: acid_0
+      name: polluted_water_edges_2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -142,18 +129,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 233e5322435363960800000000000000
-      internalID: 7581305520753337138
+      spriteID: 992b8c3556114fbd0800000000000000
+      internalID: -2597431958190902631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: acid_1
+      name: polluted_water_edges_2_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -163,60 +150,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e19559181b5ce72a0800000000000000
-      internalID: -6737730626325751522
+      spriteID: 333b16d01c45dad60800000000000000
+      internalID: 7903066109235016499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: acid_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b835bf705d86cf60800000000000000
-      internalID: 8054280360478193846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: acid_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb8190bc70d7e1880800000000000000
-      internalID: -8638329562825418561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: acid_4
+      name: polluted_water_edges_2_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -226,18 +171,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4b9bcae2ef47bbd0800000000000000
-      internalID: -2614533222644868274
+      spriteID: b2a7eb69792dfd450800000000000000
+      internalID: 6115838367503383083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: acid_5
+      name: polluted_water_edges_2_3
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -247,50 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45c7a5b8122e64710800000000000000
-      internalID: 1677276544941849684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: acid_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 514ec3db9cc973be0800000000000000
-      internalID: -1497555960800156651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: acid_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da55051cac8ce9df0800000000000000
-      internalID: -171478962641283667
+      spriteID: 0eb3d8fffe5e1a660800000000000000
+      internalID: 7395444882066455520
       vertices: []
       indices: 
       edges: []
@@ -305,15 +208,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      acid_5: 1677276544941849684
-      acid_3: -8638329562825418561
-      acid_6: -1497555960800156651
-      acid_0: 7581305520753337138
-      acid_2: 8054280360478193846
-      acid_4: -2614533222644868274
-      acid_7: -171478962641283667
-      acid_1: -6737730626325751522
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
