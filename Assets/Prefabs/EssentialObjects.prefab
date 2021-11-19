@@ -644,7 +644,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7897508421999110263}
+  - component: {fileID: 7510533597504585237}
   - component: {fileID: 4506343811834610469}
   m_Layer: 0
   m_Name: LoadingScreen
@@ -653,20 +653,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7897508421999110263
-Transform:
+--- !u!224 &7510533597504585237
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8803546277067640360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.0502, y: 2.3397, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 981.09424, y: 538.84033, z: 1}
   m_Children: []
   m_Father: {fileID: 9049564656577005512}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: -300, y: -300}
+  m_AnchorMax: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4506343811834610469
 SpriteRenderer:
   m_ObjectHideFlags: 0
