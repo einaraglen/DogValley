@@ -9,7 +9,7 @@ public enum DestinationIdentifier { A, B, C, D}
 
 public class Portal : MonoBehaviour, IPlayerTriggable {
 
-    public int toSceneIndex;
+    public string toSceneName;
     public Transform spawnPoint;
     public DestinationIdentifier portal;
 
@@ -25,7 +25,7 @@ public class Portal : MonoBehaviour, IPlayerTriggable {
 
         GameController.Instance.LockGame(true);
 
-        yield return SceneManager.LoadSceneAsync(toSceneIndex);
+        yield return SceneManager.LoadSceneAsync(SceneIndexFromName(toSceneName));
 
         //teleport player to first portal of same portal identifier A -> A etc.
         var destinationPortal = GameObject.FindObjectsOfType<Portal>().First(x => x != this && x.portal == this.portal);
@@ -37,4 +37,22 @@ public class Portal : MonoBehaviour, IPlayerTriggable {
     }
 
     public Transform SpawnPoint => spawnPoint;
+
+    private static string NameFromIndex(int BuildIndex) {
+        string path = SceneUtility.GetScenePathByBuildIndex(BuildIndex);
+        int slash = path.LastIndexOf('/');
+        string name = path.Substring(slash + 1);
+        int dot = name.LastIndexOf('.');
+        return name.Substring(0, dot);
+    }
+
+    private int SceneIndexFromName(string sceneName) {
+        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++) {
+            string testedScreen = NameFromIndex(i);
+            //print("sceneIndexFromName: i: " + i + " sceneName = " + testedScreen);
+            if (testedScreen == sceneName)
+                return i;
+        }
+        return -1;
+    }
 }

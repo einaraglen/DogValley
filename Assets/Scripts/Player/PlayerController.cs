@@ -81,9 +81,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void handleFootStepReverd() {
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        string sceneName = SceneManager.GetActiveScene().name;
         if (reverb == null) return;
-        reverb.enabled = sceneIndex == 5;
+        reverb.enabled = sceneName == "Cave";
     }
 
     public void SetPositionAndSnapToTile(Vector2 pos) {
