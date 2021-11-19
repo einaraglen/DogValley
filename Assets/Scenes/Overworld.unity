@@ -4060,6 +4060,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[0].onlyOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].onlyOnce
       value: 0
       objectReference: {fileID: 0}
@@ -19551,8 +19555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myLevel: 1
-  killObjective: 3
+  killObjective: 4
 --- !u!483693784 &1558069691
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -25046,6 +25049,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905917, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: objective
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4682297954941905918, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
       propertyPath: m_Name
       value: QuestTrigger
@@ -25248,6 +25255,14 @@ PrefabInstance:
     - target: {fileID: 7465367841695660492, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].prerequisiteObjectives.Array.data[0]
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}

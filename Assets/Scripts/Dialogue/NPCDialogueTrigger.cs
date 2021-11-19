@@ -19,7 +19,6 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
     }
 
     public void OnPlayerTriggered(PlayerController player) {
-        PlayTriggerSound();
         int i = 0;
         int n = dialogues.Length;
         bool dialogueFound = false;
@@ -48,7 +47,7 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
         }
 
         if (!dialogueFound) return;
-
+        PlayTriggerSound();
         Dialogue dialogue = dialogues[i - 1];
         if (dialogue.onlyOnce) dialogue.disabled = true;
 

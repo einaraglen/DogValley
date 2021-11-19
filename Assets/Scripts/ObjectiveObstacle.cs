@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
 {
-    public int myLevel;
     public QuestManager.Objective killObjective = QuestManager.Objective.None;
 
     private void Start()
@@ -15,7 +14,7 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
         }
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void OnLevelWasLoaded()
     {
         if (QuestManager.Instance.isComleted(killObjective))
         {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     // To add objectives, add an entry to the enum
-    public enum Objective {TTFirstMan, FindBone, EnterHouse, FindLog, None}
+    public enum Objective {TTFirstMan, TTStatue, FindSecret, FindEntrance, FindBone, EnterHouse, FindLog, None}
 
 
     private Dictionary<Objective, List<ObjectiveListener>> listeners;

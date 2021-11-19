@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Houses/EndHouseRight.unity
     guid: c12f190c8e7ca8f42b947e1f4870fc00
+  - enabled: 1
+    path: Assets/Scenes/Houses/ForestHouse.unity
+    guid: b085c6fdfe6a3f54b8119da8ccc67f7a
   m_configObjects: {}
