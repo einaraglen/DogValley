@@ -19,6 +19,7 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
     }
 
     public void OnPlayerTriggered(PlayerController player) {
+        PlayTriggerSound();
         int i = 0;
         int n = dialogues.Length;
         bool dialogueFound = false;
@@ -75,5 +76,10 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
             Debug.Log("NoTalkingBox");
             dialogueManager.startDialogue(dialogueQueue);
         }
+    }
+
+    private void PlayTriggerSound() {
+        if (this.GetComponent<AudioSource>() == null) return;
+        this.GetComponent<AudioSource>().Play();
     }
 }

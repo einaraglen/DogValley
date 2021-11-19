@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1726586338050916305
+--- !u!1 &4682297954941905918
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,58 +8,106 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1726586338050916306}
-  - component: {fileID: 1726586338050916307}
-  - component: {fileID: 132560420689025972}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: DialogueManager
+  - component: {fileID: 4682297954941905795}
+  - component: {fileID: 4682297954941905916}
+  - component: {fileID: 4682297954941905917}
+  - component: {fileID: 4682297954941905794}
+  - component: {fileID: 41547978903128205}
+  m_Layer: 7
+  m_Name: QuestTrigger
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1726586338050916306
+--- !u!4 &4682297954941905795
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726586338050916305}
+  m_GameObject: {fileID: 4682297954941905918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.72, y: 7.084, z: 0}
+  m_LocalScale: {x: 1, y: 1.1125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1726586338050916307
+--- !u!61 &4682297954941905916
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682297954941905918}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.23318112, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5926726, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &4682297954941905917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726586338050916305}
+  m_GameObject: {fileID: 4682297954941905918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c24e5ca79531bf42a0cb2fd0213f392, type: 3}
+  m_Script: {fileID: 11500000, guid: 31aec1d78096d51469150bf848097fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 0}
-  textCanvas: {fileID: 0}
-  textSpeed: 0.15
---- !u!82 &132560420689025972
+  objective: 3
+  prerequisiteObjectives: 00000000
+--- !u!50 &4682297954941905794
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682297954941905918}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!82 &41547978903128205
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726586338050916305}
+  m_GameObject: {fileID: 4682297954941905918}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9e502b7b2344e2e4e867818ba345ff5e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9602ad3b2043ec04b9fbfcc0f3c01ac3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.147
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
