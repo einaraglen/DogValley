@@ -14,8 +14,8 @@ public class QuestTrigger : MonoBehaviour, IPlayerTriggable
             if (!QuestManager.Instance.isComleted(obj)) ready = false;
         }
 
-        if (!ready) return;
-
+        if (!ready || QuestManager.Instance.isComleted(objective)) return;
+        this.GetComponent<AudioSource>().Play();
         QuestManager.Instance.completeObjective(objective);
     }
 }

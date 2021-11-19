@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void HandleUpdate() {
         if (Input.GetMouseButtonDown(0) && !typing && conversing) {
+            if (this.GetComponent<AudioSource>() != null) this.GetComponent<AudioSource>().Play();
             if (dialogueSentences.Count != 0) {
                 currentLine = dialogueSentences.Dequeue();
                 StartCoroutine(writeLine());
