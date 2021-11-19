@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
 {
     public QuestManager.Objective killObjective = QuestManager.Objective.None;
+    public bool activeAfter = false;
 
     private void Start()
     {
@@ -18,7 +19,7 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
     {
         if (QuestManager.Instance.isComleted(killObjective))
         {
-            this.gameObject.SetActive(false);
+            this.gameObject.SetActive(activeAfter);
         }
     }
 
@@ -27,7 +28,11 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
         Debug.Log("Listened");
         if (listenedObj == killObjective)
         {
-            this.gameObject.SetActive(false);
+            //check if obstacle has sprite render and activeAfter is true
+            if (this.GetComponent<SpriteRenderer>() != null && activeAfter) {
+                this.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            this.gameObject.SetActive(activeAfter);
             QuestManager.Instance.stopListening(killObjective, this);
         }
     }
