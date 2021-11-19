@@ -82,6 +82,7 @@ public class PlayerController : MonoBehaviour {
 
     public void handleFootStepReverd() {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (reverb == null) return;
         reverb.enabled = sceneIndex == 5;
     }
 
