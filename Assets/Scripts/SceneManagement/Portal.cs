@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum DestinationIdentifier { A, B, C, D}
+public enum DestinationIdentifier { A, B, C, D, E, F, G }
 
 public class Portal : MonoBehaviour, IPlayerTriggable {
 

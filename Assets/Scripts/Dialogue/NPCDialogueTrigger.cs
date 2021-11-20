@@ -62,10 +62,6 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
             dialogueQueue.Enqueue(s);
         }
 
-        if (dialogue.completeObjective != QuestManager.Objective.None) {
-            QuestManager.Instance.completeObjective(dialogue.completeObjective);
-        }
-
         if (this.talkingbox != null)
         {
             Debug.Log("ActivatingTalking");
@@ -74,6 +70,11 @@ public class NPCDialogueTrigger : MonoBehaviour, IPlayerTriggable
         {
             Debug.Log("NoTalkingBox");
             dialogueManager.startDialogue(dialogueQueue);
+        }
+
+        //After convo, complete Objective if exists
+        if (dialogue.completeObjective != QuestManager.Objective.None) {
+            QuestManager.Instance.completeObjective(dialogue.completeObjective);
         }
     }
 

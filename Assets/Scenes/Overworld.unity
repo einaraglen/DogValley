@@ -4068,6 +4068,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[0].completeObjective
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].completeObjective
       value: 4
       objectReference: {fileID: 0}
@@ -4077,7 +4081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7465367841695660488, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
