@@ -6,12 +6,15 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
 {
     public QuestManager.Objective killObjective = QuestManager.Objective.None;
     public bool activeAfter = false;
+    public GameObject before;
+    public GameObject after;
 
     private void Start()
     {
         if (!QuestManager.Instance.isComleted(killObjective))
         {
             QuestManager.Instance.listenTo(killObjective, this);
+
         }
     }
 
@@ -19,7 +22,13 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
     {
         if (QuestManager.Instance.isComleted(killObjective))
         {
-            this.gameObject.SetActive(activeAfter);
+            if (this.activeAfter)
+            {
+                setBefore();
+            } else
+            {
+                setAfter();
+            }
         }
     }
 
@@ -32,9 +41,23 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener
             if (this.GetComponent<SpriteRenderer>() != null && activeAfter) {
                 this.GetComponent<SpriteRenderer>().enabled = true;
             }
-            this.gameObject.SetActive(activeAfter);
+            if (this.activeAfter) setBefore();
+            if (!this.activeAfter) setAfter();
+            //this.gameObject.SetActive(activeAfter);
             QuestManager.Instance.stopListening(killObjective, this);
         }
+    }
+
+    private void setBefore()
+    {
+        if (this.before != null) this.before.SetActive(true);
+        if (this.after != null) this.after.SetActive(false);
+    }
+
+    private void setAfter()
+    {
+        if (this.before != null) this.before.SetActive(false);
+        if (this.after != null) this.after.SetActive(true);
     }
 
     private void OnDestroy()
