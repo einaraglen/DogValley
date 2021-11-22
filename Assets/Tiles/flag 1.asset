@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: PondBottomRight
+  m_Name: flag 1
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -3213966730498734611, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
-  - {fileID: -7235469916650045074, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
-  - {fileID: 8037215131317378918, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
-  m_MinSpeed: 4
-  m_MaxSpeed: 4
+  - {fileID: -6882987733501649589, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
+  - {fileID: -5141082086305877206, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
+  - {fileID: -1765734875813024817, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
+  - {fileID: -4188768234734423817, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
+  - {fileID: 6123700423111140210, guid: ea0e58fd7425e284aa3d0974b4a8fd90, type: 3}
+  m_MinSpeed: 8
+  m_MaxSpeed: 8
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
