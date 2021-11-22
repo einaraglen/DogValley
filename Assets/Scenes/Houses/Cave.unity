@@ -1983,6 +1983,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killObjective: 4
   activeAfter: 0
+  before: {fileID: 0}
+  after: {fileID: 0}
 --- !u!1001 &822311701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8098,6 +8100,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killObjective: 3
   activeAfter: 1
+  before: {fileID: 0}
+  after: {fileID: 0}
+--- !u!95 &1405343960
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405343952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f2bec5463413744eabfd94c6d896788, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1477456195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8235,6 +8258,10 @@ PrefabInstance:
     - target: {fileID: 1866269725, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866269725, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465367841695660488, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: m_Enabled
@@ -9140,6 +9167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killObjective: 4
   activeAfter: 0
+  before: {fileID: 0}
+  after: {fileID: 0}
 --- !u!1 &1629571826
 GameObject:
   m_ObjectHideFlags: 0
