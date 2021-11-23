@@ -5,16 +5,18 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour {
     // To add objectives, add an entry to the enum
     public enum Objective {
-        TTFirstMan,
+        None,
         TTStatue,
         FindSecret,
         FindEntrance,
         OpenEntrance,
-        FindBone,
-        EnterHouse,
-        FindLog,
-        None,
-        Test,
+        RemoveBones1,
+        RemoveBones2,
+        RemoveDone1,
+        RemoveBones3,
+        RemoveBones4,
+        RemoveDone2,
+        InitialForestMonolog
     }
 
 

@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void OnLevelWasLoaded() {
-        handleFootStepReverd();
+        handleFootStepReverb();
     }
 
     IEnumerator Move(Vector3 targetPosition) {
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-    public void handleFootStepReverd() {
+    public void handleFootStepReverb() {
         string sceneName = SceneManager.GetActiveScene().name;
         if (reverb == null) return;
         reverb.enabled = sceneName == "Cave";
