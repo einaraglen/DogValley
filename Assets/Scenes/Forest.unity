@@ -9504,7 +9504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306308886887502999, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.9
+      value: 8.79
       objectReference: {fileID: 0}
     - target: {fileID: 3306308886887502999, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15918,20 +15918,56 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[0].completeObjective
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[1].completeObjective
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: Seems like the path is blocked
+      value: Maybe there is someone in the next town that has an Axe?
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
       value: Maybe there is someone in the house that knows something!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
+      value: Seems like the path is blocked
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
+      value: Maybe there is someone in the house that knows something!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[1].prerequisiteObjectives.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
+      propertyPath: dialogues.Array.data[1].prerequisiteObjectives.Array.data[0]
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}

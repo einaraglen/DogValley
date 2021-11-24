@@ -16,7 +16,9 @@ public class QuestManager : MonoBehaviour {
         RemoveBones3,
         RemoveBones4,
         RemoveDone2,
-        InitialForestMonolog
+        InitialForestMonolog,
+        OpenChest,
+        ChestMonolog,
     }
 
 

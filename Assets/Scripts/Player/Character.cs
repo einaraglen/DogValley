@@ -6,7 +6,7 @@ public class Character : MonoBehaviour {
 
     public Animator animator;
     public LayerMask solidObjectsLayer;
-    private bool isMoving;
+    public bool isMoving;
     public float moveSpeed;
     void Awake() {
         animator = GetComponent<Animator>();
@@ -30,15 +30,13 @@ public class Character : MonoBehaviour {
         targetPosition.x += moveVector.x;
         targetPosition.y += moveVector.y;
 
-        if (!isWalkable(targetPosition)) yield break;
 
         //init movment
         isMoving = true;
 
         //animate player between tiles
         while (((targetPosition - transform.position).sqrMagnitude > Mathf.Epsilon)) {
-            //animate character
-            
+            //if (!isWalkable(targetPosition)) yield break;
             //move player based on moveSpeed
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             //yield return, stops current execution of code, but sets "checkpoint" so next execution will resume where it last yield'ed

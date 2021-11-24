@@ -216,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].completeObjective
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.size
@@ -245,11 +245,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
-      value: Aha! I should go back to the Statue!
+      value: Aha! I should go back to the Cave!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
-      value: '"The secret entrance is foud where you least want to go ... "'
+      value: '"The secret entrance is found where you least want to go ... "'
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[1]
@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].prerequisiteObjectives.Array.data[0]
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7465367841695660488, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
