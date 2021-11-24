@@ -19,6 +19,7 @@ public class QuestManager : MonoBehaviour {
         InitialForestMonolog,
         OpenChest,
         ChestMonolog,
+        RemoveLog,
     }
 
 
