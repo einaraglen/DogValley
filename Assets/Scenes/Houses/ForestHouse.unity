@@ -2831,19 +2831,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: Hello there, how is the journey going?
+      value: Hello Dog!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
-      value: Anyways, if you go back to where you came from
+      value: You need a key to enter the cave.
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[2]
-      value: There should be a book inside the house with the flag!
+      value: My friend at Greenmeadow farm has one in his house!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[3]
-      value: Here you will find the key to opening the cave!
+      value: 'It might be in the shape of a book with a flag on it... '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.size
