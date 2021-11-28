@@ -56,8 +56,8 @@ public class GameController : MonoBehaviour {
     }
 
     public void LockGame(bool locked) {
-        StartCoroutine(FadeLoadingScreen(locked));
         if (locked) {
+            //StartCoroutine(FadeLoadingScreen(true));
             previousState = state;
             state = GameState.Locked;
         }

@@ -22,7 +22,6 @@ public class Portal : MonoBehaviour, IPlayerTriggable {
 
     IEnumerator SwitchScene() {
         DontDestroyOnLoad(gameObject);
-        //StartCoroutine(GameController.Instance.FadeLoadingScreen(true));
         GameController.Instance.LockGame(true);
 
         yield return SceneManager.LoadSceneAsync(SceneIndexFromName(toSceneName));
@@ -32,8 +31,6 @@ public class Portal : MonoBehaviour, IPlayerTriggable {
         player.SetPositionAndSnapToTile(destinationPortal.spawnPoint.position);
 
         GameController.Instance.LockGame(false);
-        //StartCoroutine(GameController.Instance.FadeLoadingScreen(false));
-
         Destroy(gameObject);
     }
 
