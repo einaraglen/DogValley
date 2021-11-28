@@ -13813,7 +13813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943965160941483696, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_Name
-      value: KillAfterMonolog (1)
+      value: FindBoneMonolog
       objectReference: {fileID: 0}
     - target: {fileID: 6943965160941483698, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_RootOrder
@@ -13874,7 +13874,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3306308886887502996, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: m_Name
-      value: KillAfterPickup
+      value: Bone1
       objectReference: {fileID: 0}
     - target: {fileID: 3306308886887502999, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: m_RootOrder
@@ -18293,7 +18293,7 @@ PrefabInstance:
       objectReference: {fileID: -7090536148850691757, guid: 8df1ab693e58b0d4b96f0edac1decb16, type: 3}
     - target: {fileID: 3306308886887502996, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: m_Name
-      value: KillAfterPickup (1)
+      value: Bone2
       objectReference: {fileID: 0}
     - target: {fileID: 3306308886887502999, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: m_RootOrder
@@ -20901,7 +20901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943965160941483696, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_Name
-      value: KillAfterMonolog
+      value: CleanStreamMonolog
       objectReference: {fileID: 0}
     - target: {fileID: 6943965160941483698, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_RootOrder
