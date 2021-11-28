@@ -34321,7 +34321,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - sentences:
-    - TEST
+    - Thank you so much for removing the log
+    - My grandfather is in the house to the right, he want to talk to you!
+    prerequisiteObjectives: 0e000000
+    disabled: 0
+    onlyOnce: 0
+    completeObjective: 0
+  - sentences:
+    - Great you have the axe!
+    - Now go to the log and remove it!
+    prerequisiteObjectives: 0d000000
+    disabled: 0
+    onlyOnce: 0
+    completeObjective: 0
+  - sentences:
+    - Did you come from the forest!?
+    - My grandfather is stuck on the other side
+    - Could you help me clear the path for him?
+    - There is an Axe hidden in the Nother East corner of Town
     prerequisiteObjectives: 
     disabled: 0
     onlyOnce: 0
