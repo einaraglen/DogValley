@@ -22,6 +22,8 @@ public class QuestManager : MonoBehaviour {
         RemoveLog,
         RemoveBones5,
         EnterEnd,
+        TalkToGramps,
+        GetFirstItem
     }
 
 
