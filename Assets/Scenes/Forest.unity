@@ -20779,11 +20779,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
-      value: I need an axe.
+      value: There has to be another way.
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
-      value: 'Where do I find an axe? '
+      value: Maybe there is someone in the house over there!
       objectReference: {fileID: 0}
     - target: {fileID: 3421078401653108425, guid: dada90d4e5f3c3544bc63990f970453a, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.size

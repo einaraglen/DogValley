@@ -75,11 +75,10 @@ public class GameController : MonoBehaviour {
     }
 
     void OnLevelWasLoaded() {
-        StartCoroutine(FadeLoadingScreen(false));
+        //StartCoroutine(FadeLoadingScreen(false));
     }
 
     public IEnumerator FadeLoadingScreen(bool faded = true, int speed = 5) {
-        //DontDestroyOnLoad(gameObject);
         Color screenColor = loadingScreen.GetComponent<SpriteRenderer>().color;
         float fadeAmount;
 
@@ -101,7 +100,6 @@ public class GameController : MonoBehaviour {
             }
         }
         yield return new WaitForEndOfFrame();
-        //Destroy(gameObject);
     }
 
 }
