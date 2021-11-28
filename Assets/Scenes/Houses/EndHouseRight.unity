@@ -770,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.19
+      value: 2.15
       objectReference: {fileID: 0}
     - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1000,6 +1000,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34f190aa1d3c7004ba4195adbac474a6, type: 3}
+--- !u!1001 &1193414758
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.25245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905795, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905916, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905917, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: objective
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905917, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: prerequisiteObjectives.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905917, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: prerequisiteObjectives.Array.data[0]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905918, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_Name
+      value: TESTTRIGGER (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297954941905918, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38ff50ba1be265d49b263b744e5a00aa, type: 3}
 --- !u!1001 &1289068371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2163,11 +2244,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[0].onlyOnce
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].onlyOnce
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].onlyOnce
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].completeObjective
@@ -2175,6 +2264,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].completeObjective
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].completeObjective
       value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
@@ -2183,11 +2276,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: Great, you will need on more item!
+      value: You should take the items to the dock, and remove the pollution!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
@@ -2204,21 +2301,56 @@ PrefabInstance:
       value: After you get it, come back here, and i will tell you the next step!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[4]
+      value: After this, you need to go out on the dock, in the middle of the lake,
+        and combine them together!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[5]
+      value: I wish you luck Dog, you will need it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
-      value: So you want to cleanse the stream of pollution?
+      value: Great, you will need one more item!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
+      value: There is a girl in a Red hood, at the east side of town, she will be
+        right by the tower!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
+      value: She has a **INSERT SPECIAL 2**
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[3]
+      value: This will be crucial for the removal of the pollution
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[4]
+      value: After this, you need to go out on the dock, in the middle of the lake,
+        and combine them together!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[5]
+      value: I wish you luck Dog, you will need it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
+      value: So you want to cleanse the stream of pollution?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[1]
       value: Many have tried before, but failed. You need a set of special items
         to make this happen
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
-      propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[2]
       value: First you have to go to the market, at the west side of town, here you
         will ask for **INSERT SPECIAL**
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
-      propertyPath: dialogues.Array.data[1].sentences.Array.data[3]
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[3]
       value: After you get it, come back here, and i will tell you the next step!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
@@ -2226,8 +2358,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].prerequisiteObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].prerequisiteObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[1]
@@ -2235,6 +2375,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].prerequisiteObjectives.Array.data[0]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].prerequisiteObjectives.Array.data[1]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].prerequisiteObjectives.Array.data[0]
       value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []

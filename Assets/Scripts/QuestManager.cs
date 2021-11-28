@@ -23,7 +23,10 @@ public class QuestManager : MonoBehaviour {
         RemoveBones5,
         EnterEnd,
         TalkToGramps,
-        GetFirstItem
+        GetFirstItem,
+        TalkToGramps2,
+        TalkToGirl,
+        CompleteGame
     }
 
 
