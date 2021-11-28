@@ -78,6 +78,11 @@ public class GameController : MonoBehaviour {
         //StartCoroutine(FadeLoadingScreen(false));
     }
 
+    public void quitGame()
+    {
+        Application.Quit();
+    }
+
     public IEnumerator FadeLoadingScreen(bool faded = true, int speed = 5) {
         Color screenColor = loadingScreen.GetComponent<SpriteRenderer>().color;
         float fadeAmount;
