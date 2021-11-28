@@ -20,6 +20,10 @@ public class QuestManager : MonoBehaviour {
         OpenChest,
         ChestMonolog,
         RemoveLog,
+        RemoveBones5,
+        EnterEnd,
+        TalkToGramps,
+        GetFirstItem
     }
 
 
