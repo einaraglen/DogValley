@@ -24,6 +24,12 @@ public class GameController : MonoBehaviour {
         loadingScreen = canvas.transform.Find("LoadingScreen").gameObject;
     }
 
+    public void Reset()
+    {
+        gameCompleted = false;
+        QuestManager.Instance.ClearProgress();
+    }
+
     public void completeGame()
     {
         gameCompleted = true;
