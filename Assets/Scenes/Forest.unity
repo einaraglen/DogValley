@@ -21322,6 +21322,10 @@ PrefabInstance:
       propertyPath: killObjectives.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
 --- !u!1001 &7898218821195714571
