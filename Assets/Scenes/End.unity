@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 21
+  killObjectives: 
   activeAfter: 0
   before: {fileID: 1451537833}
   after: {fileID: 644277010}
@@ -6164,7 +6164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 15
+  killObjectives: 
   activeAfter: 0
   before: {fileID: 1633969765}
   after: {fileID: 713485837}
@@ -37388,6 +37388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559447995}
   - component: {fileID: 1559447994}
+  - component: {fileID: 1559447996}
   m_Layer: 0
   m_Name: FinalObjective
   m_TagString: Untagged
@@ -37437,6 +37438,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559447996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559447993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cc84b9a5f69524281bb7a29fef46a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1625037587
 GameObject:
   m_ObjectHideFlags: 0
@@ -37845,7 +37858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 4
+  killObjectives: 
   activeAfter: 0
   before: {fileID: 294820708}
   after: {fileID: 816123911}
