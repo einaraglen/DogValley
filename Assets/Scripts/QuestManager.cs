@@ -77,5 +77,10 @@ public class QuestManager : MonoBehaviour {
         progress[Objective.None] = true;
     }
 
+    public void ClearProgress()
+    {
+        QuestManager.Instance.setupObjectives();
+    }
+
 
 }
