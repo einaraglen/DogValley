@@ -3,20 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener {
-    public QuestManager.Objective killObjective = QuestManager.Objective.None;
+    public QuestManager.Objective[] killObjectives;
     public bool activeAfter = false;
     public GameObject before;
     public GameObject after;
 
     private void Start() {
-        if (!QuestManager.Instance.isComleted(killObjective)) {
-            QuestManager.Instance.listenTo(killObjective, this);
-
+        bool completed = true;
+        foreach(QuestManager.Objective obj in killObjectives)
+        {
+            if (!QuestManager.Instance.isComleted(obj))
+            {
+                QuestManager.Instance.listenTo(obj, this);
+                completed = false;
+            }
         }
     }
 
     private void OnLevelWasLoaded() {
-        if (QuestManager.Instance.isComleted(killObjective)) {
+        bool completed = true;
+        foreach (QuestManager.Objective obj in killObjectives)
+        {
+            if (!QuestManager.Instance.isComleted(obj))
+            {
+                completed = false;
+            }
+        }
+        if (completed) {
             if (this.activeAfter) {
                 setBefore();
             }
@@ -28,15 +41,31 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener {
 
     public void objectiveCompleted(QuestManager.Objective listenedObj) {
         Debug.Log("Listened");
-        if (listenedObj == killObjective) {
-            //check if obstacle has sprite render and activeAfter is true
-            if (this.GetComponent<SpriteRenderer>() != null && activeAfter) {
-                this.GetComponent<SpriteRenderer>().enabled = true;
+        foreach(QuestManager.Objective obj in killObjectives)
+        {
+            if (listenedObj == obj)
+            {
+                bool completed = true;
+                foreach (QuestManager.Objective objective in killObjectives)
+                {
+                    if (!QuestManager.Instance.isComleted(objective))
+                    {
+                        completed = false;
+                    }
+                }
+                if (completed)
+                {
+                    if (this.activeAfter)
+                    {
+                        setBefore();
+                    }
+                    else
+                    {
+                        setAfter();
+                    }
+                }
+                QuestManager.Instance.stopListening(obj, this);
             }
-            if (this.activeAfter) setBefore();
-            if (!this.activeAfter) setAfter();
-            //this.gameObject.SetActive(activeAfter);
-            QuestManager.Instance.stopListening(killObjective, this);
         }
     }
 
@@ -51,6 +80,9 @@ public class ObjectiveObstacle : MonoBehaviour, ObjectiveListener {
     }
 
     private void OnDestroy() {
-        QuestManager.Instance.stopListening(killObjective, this);
+        foreach (QuestManager.Objective obj in killObjectives)
+        {
+            QuestManager.Instance.stopListening(obj, this);
+        }
     }
 }

@@ -2720,7 +2720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 14
+  killObjectives: 0e000000
   activeAfter: 0
   before: {fileID: 2143460061}
   after: {fileID: 667328624}

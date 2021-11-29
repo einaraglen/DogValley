@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public enum GameState { FreeRoam, Paused, Dialogue, Locked }
 
@@ -12,6 +14,8 @@ public class GameController : MonoBehaviour {
     public DialogueManager dialogueManager; 
     public Canvas canvas;
     private GameObject loadingScreen;
+    public static bool gameCompleted = false;
+    public bool hasStartedLoading = false;
 
     public static GameController Instance { get; private set; }
 
@@ -20,18 +24,36 @@ public class GameController : MonoBehaviour {
         loadingScreen = canvas.transform.Find("LoadingScreen").gameObject;
     }
 
+    public void completeGame()
+    {
+        gameCompleted = true;
+    }
+
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             PauseGame(state != GameState.Paused);
         }
 
         if (state == GameState.FreeRoam) {
-            playerController.HandleUpdate();
+            if (gameCompleted)
+            {
+                if (!hasStartedLoading) {
+                    hasStartedLoading = true;
+                    StartCoroutine(End());
+                }
+            } else
+            {
+                playerController.HandleUpdate();
+            }
         }
         
         if (state == GameState.Dialogue) {
             dialogueManager.HandleUpdate();
         }
+    }
+
+    private IEnumerator End() {
+        yield return SceneManager.LoadSceneAsync(0);
     }
 
     public void Dialog(bool dialog) {
