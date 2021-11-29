@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour {
     public Canvas canvas;
     private GameObject loadingScreen;
     public static bool gameCompleted = false;
+    public bool hasStartedLoading = false;
 
     public static GameController Instance { get; private set; }
 
@@ -36,7 +37,10 @@ public class GameController : MonoBehaviour {
         if (state == GameState.FreeRoam) {
             if (gameCompleted)
             {
-                SceneManager.LoadScene(0);
+                if (!hasStartedLoading) {
+                    hasStartedLoading = true;
+                    StartCoroutine(End());
+                }
             } else
             {
                 playerController.HandleUpdate();
@@ -46,6 +50,10 @@ public class GameController : MonoBehaviour {
         if (state == GameState.Dialogue) {
             dialogueManager.HandleUpdate();
         }
+    }
+
+    private IEnumerator End() {
+        yield return SceneManager.LoadSceneAsync(0);
     }
 
     public void Dialog(bool dialog) {
