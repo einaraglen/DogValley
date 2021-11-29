@@ -18374,7 +18374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7861177479907366074, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: prerequisiteObjectives.Array.data[0]
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
@@ -19636,7 +19636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjectives: 
+  killObjectives: 070000000f000000
   activeAfter: 0
   before: {fileID: 1832536074}
   after: {fileID: 893596934}

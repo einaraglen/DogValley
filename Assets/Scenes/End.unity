@@ -402,6 +402,14 @@ PrefabInstance:
       propertyPath: killObjective
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.data[0]
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
 --- !u!1 &145837002
@@ -433,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 21
+  killObjectives: 15000000
   activeAfter: 0
   before: {fileID: 1451537833}
   after: {fileID: 644277010}
@@ -723,6 +731,10 @@ PrefabInstance:
     - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: killObjective
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7861177479907366074, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: objective
@@ -6164,7 +6176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 15
+  killObjectives: 08000000090000000f000000
   activeAfter: 0
   before: {fileID: 1633969765}
   after: {fileID: 713485837}
@@ -6314,6 +6326,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: killObjective
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.data[0]
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7861177479907366074, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
@@ -37217,6 +37237,10 @@ PrefabInstance:
       propertyPath: killObjective
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7861177479907366074, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: objective
       value: 9
@@ -37845,7 +37869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 4
+  killObjectives: 04000000
   activeAfter: 0
   before: {fileID: 294820708}
   after: {fileID: 816123911}
@@ -39925,7 +39949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907053, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907053, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39933,7 +39957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907053, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.41
+      value: 18.74
       objectReference: {fileID: 0}
     - target: {fileID: 6943965160941483696, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: m_Name
@@ -39986,6 +40010,22 @@ PrefabInstance:
     - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: killObjective
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.data[0]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.data[1]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.data[2]
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
@@ -40047,6 +40087,10 @@ PrefabInstance:
     - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: killObjective
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7861177479907366074, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: objective
@@ -42821,6 +42865,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: killObjective
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943965160941483699, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
+      propertyPath: killObjectives.Array.data[0]
       value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
