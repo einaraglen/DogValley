@@ -2280,7 +2280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
@@ -2311,47 +2311,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
-      value: Great, you will need one more item!
+      value: 'Great, you got the Pollution-Away! '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
-      value: There is a girl in a Red hood, at the east side of town, she will be
-        right by the tower!
+      value: 'The fuel is rare around these parts, wolf essence. '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
-      value: She has a **INSERT SPECIAL 2**
+      value: 'I know a girl who said she had some. '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[3]
-      value: This will be crucial for the removal of the pollution
+      value: 'She can usually be found at the east side of Pondwick. '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[4]
-      value: After this, you need to go out on the dock, in the middle of the lake,
-        and combine them together!
+      value: 'After you get it, use the Pollution-Away on the lake from the pier! '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[5]
+      value: 'I wish you luck Dog! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[6]
       value: I wish you luck Dog, you will need it!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
-      value: So you want to cleanse the stream of pollution?
+      value: 'Thank you for helping me get home, Dog! '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[1]
-      value: Many have tried before, but failed. You need a set of special items
-        to make this happen
+      value: 'You want to clear the pollution, you say? '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[2]
-      value: First you have to go to the market, at the west side of town, here you
-        will ask for **INSERT SPECIAL**
+      value: 'You need a Pollution-Away. '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[3]
-      value: After you get it, come back here, and i will tell you the next step!
+      value: 'They have one at the market at the west-side of town, but we have no
+        fuel... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[4]
+      value: 'Go get it, and I''ll tell you about the fuel. '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.size

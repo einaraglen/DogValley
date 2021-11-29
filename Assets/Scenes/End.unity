@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
-      value: I need the pick them up fix the stream!
+      value: I need to pick them up to clear the river!
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
@@ -644,14 +644,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - sentences:
-    - What would a dog be doing with a **INSERT SPECIAL** ...
+    - What would a dog be doing with a Pollution-Away...
     prerequisiteObjectives: 12000000
     disabled: 0
     onlyOnce: 0
     completeObjective: 0
   - sentences:
-    - You want a what now?!
-    - I actually have one last item of **INSERT SPECIAL** if you really need it
+    - You want a what now?
+    - 'You can have it at no cost, the Pollution-Away is useless without fuel. '
     - Here you go!
     prerequisiteObjectives: 11000000
     disabled: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
     completeObjective: 18
   - sentences:
     - What can I get you?
-    - .. who am i kidding, you're a dog, you dont buy things
+    - ... who am I kidding, you're a dog, you dont buy things...
     prerequisiteObjectives: 00000000
     disabled: 0
     onlyOnce: 0
@@ -6526,13 +6526,14 @@ MonoBehaviour:
   dialogues:
   - sentences:
     - Its happening!
-    - The water is clear again! I cant believe I made it!
+    - 'The water is clear again! '
+    - 'I made it! '
     prerequisiteObjectives: 070000000f00000014000000
     disabled: 0
     onlyOnce: 0
     completeObjective: 21
   - sentences:
-    - Look at all those bones, this has to be the source of the pollution!
+    - More bones! This must be the source of the pollution!
     prerequisiteObjectives: 
     disabled: 0
     onlyOnce: 0
@@ -7315,13 +7316,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - sentences:
-    - I hope you manage to save the stream!
+    - I hope you manage to clear the pollution!
     prerequisiteObjectives: 14000000
     disabled: 0
     onlyOnce: 0
     completeObjective: 0
   - sentences:
-    - Here you go **INSERT SPECIAL 2**
+    - 'Hello Dog. '
+    - 'You need my wolf essence to clear the pollution? '
+    - ...
+    - 'You can have it. '
     prerequisiteObjectives: 13000000
     disabled: 0
     onlyOnce: 0
@@ -37332,11 +37336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: zzzzzzz ...
+      value: 'Zzz ... '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
-      value: Damn, maybe I should rest soon
+      value: 'I''m tired '
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
@@ -39792,24 +39796,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - sentences:
-    - Thank you so much for removing the log
-    - My grandfather is in the house to the right, he want to talk to you!
+    - 'Thank you for removing the log Dog! '
+    - My grandfather is in the house to the right, he wants to talk to you!
     prerequisiteObjectives: 0e000000
     disabled: 0
     onlyOnce: 0
     completeObjective: 0
   - sentences:
-    - Great you have the axe!
-    - Now go to the log and remove it!
+    - You have the axe!
+    - 'Please remove the log! '
     prerequisiteObjectives: 0d000000
     disabled: 0
     onlyOnce: 0
     completeObjective: 0
   - sentences:
-    - Did you come from the forest!?
-    - My grandfather is stuck on the other side
+    - Did you come from Green Forest?
+    - 'My grandfather is stuck there. '
     - Could you help me clear the path for him?
-    - There is an Axe hidden in the Nother East corner of Town
+    - 'I heard rumours there is an axe in the south-east corner of town... '
     prerequisiteObjectives: 
     disabled: 0
     onlyOnce: 0
@@ -39909,11 +39913,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: The pollution is still comming from a different source
+      value: 'There is more pollution! '
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
-      value: I can feel that we are getting closer!
+      value: 'How do I clear it? '
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.data[0]
@@ -42741,11 +42745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: I should take this Axe to the entrance of town
+      value: "An axe! \t"
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
-      value: and remove the log so the town's folk can travle freely
+      value: 'I should remove the log. '
       objectReference: {fileID: 0}
     - target: {fileID: 560623362321907052, guid: 488dfe3907c6ae944b4e10c5b0022612, type: 3}
       propertyPath: dialogues.Array.data[0].prerequisiteObjectives.Array.size

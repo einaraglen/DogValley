@@ -224,15 +224,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
-      value: I should go tell the Statue about the secret entrance!
+      value: I should go to the Cave!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
@@ -240,20 +240,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
-      value: '"... Talk to the Statue about his day, and the entrance will show itself.
-        "'
+      value: '"... Caves often have statues living in them... "'
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
-      value: Aha! I should go back to the Cave!
+      value: '"... Statues apreciate if you ask them about their day... " '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
+      value: Huh! I should go to the Cave!
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
-      value: '"The secret entrance is found where you least want to go ... "'
+      value: '"... Caves often have statues living in them... "'
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].sentences.Array.data[1]
-      value: Hmmm, maybe this will come in handy later ...
+      value: '"... Statues apreciate if you ask them about their day... " '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[2]
+      value: Hmmm, maybe this will come in handy later...
       objectReference: {fileID: 0}
     - target: {fileID: 7465367842186678935, guid: 7cdda5fea42372d459ad43d001604a1b, type: 3}
       propertyPath: dialogues.Array.data[2].prerequisiteObjectives.Array.size
