@@ -14001,8 +14001,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: before
+      value: 
+      objectReference: {fileID: 580161661}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+--- !u!1 &580161661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3306308887168020283, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+  m_PrefabInstance: {fileID: 580161660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &605223796
 GameObject:
   m_ObjectHideFlags: 0
@@ -17086,7 +17103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 6
+  killObjectives: 0600000005000000
   activeAfter: 0
   before: {fileID: 806077083}
   after: {fileID: 605223796}
@@ -18328,7 +18345,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: before
+      value: 
+      objectReference: {fileID: 1320268206}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
       propertyPath: killObjective
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306308887168020261, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+      propertyPath: killObjectives.Array.data[0]
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7861177479907366074, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
@@ -18341,6 +18370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+--- !u!1 &1320268206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3306308887168020283, guid: 53a78093a9c100540ac0488e4f9f0ade, type: 3}
+  m_PrefabInstance: {fileID: 1320268205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1424536040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19594,7 +19628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a1c0b36869eea45bcd7001759554d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killObjective: 10
+  killObjectives: 
   activeAfter: 0
   before: {fileID: 1832536074}
   after: {fileID: 893596934}
